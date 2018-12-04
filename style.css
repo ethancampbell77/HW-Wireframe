@@ -1,0 +1,94 @@
+/* HW-Wireframe Stylesheet */
+ 
+* {
+    box-sizing: border-box;
+}
+
+/* Body/Doc Style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    font-size: 18px;
+    text-align: center;
+    background: #777;
+    width: 960px;
+}
+
+/* Largest Container */
+.container {
+    margin-right: 0%;
+    margin-left: 15%;
+}
+
+/* Header, Nav & Footer*/
+header,
+nav,
+footer {
+    background-color: #EBEBEB;
+    width: 100%;
+    padding: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Middle Set of Content Boxes */
+.middle {
+    background-color: #EBEBEB;
+    color: #777;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* Left Side Content */
+.leftBox {
+    float: left;
+    width: 68%;
+    background-color: #EBEBEB;
+    color: #777;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Section is it's own box above Article */
+section {
+    background-color: #EBEBEB;
+    color: #777;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Article Contains Headings and Paragraph - It appears the "H1,H2, H3" and Paragraph widths are smaller than the designated 495px in the provided ref.  */
+article {
+    background-color: #777;
+    color: #EBEBEB;
+    padding: 20px;
+}
+/* My Content Heading and Paragraph */
+.heading,
+p {
+    background-color: #EBEBEB;
+    color: #777;
+    width: 495px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* Right Side Content - I used Height to lengthen rather than Content and Padding to achieve box size in order to keep text where it appears in the provided ref image */
+aside {
+    float: right;
+    width: 31%;
+    background-color: #EBEBEB;
+    color: #777;
+    padding: 42px;
+    height: 279px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
