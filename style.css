@@ -1,5 +1,6 @@
 /* HW-Wireframe Stylesheet */
- 
+
+/* Universal Box Sizing to help with layout */
 * {
     box-sizing: border-box;
 }
@@ -14,8 +15,8 @@ body {
     width: 960px;
 }
 
-/* Largest Container */
-.container {
+/* Largest Container - Whole Page to create margins*/
+div.container {
     margin-right: 0%;
     margin-left: 15%;
 }
@@ -32,22 +33,23 @@ footer {
 }
 
 /* Clearfix */
-.clearfix::after {
+div.clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
 
 /* Middle Set of Content Boxes */
-.middle {
+div.middle {
     background-color: #EBEBEB;
     color: #777;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-/* Left Side Content */
-.leftBox {
+
+/* Left of Middle Box - Side Content */
+div.leftBox {
     float: left;
     width: 68%;
     background-color: #EBEBEB;
@@ -56,6 +58,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 /* Section is it's own box above Article */
 section {
     background-color: #EBEBEB;
@@ -64,14 +67,16 @@ section {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 /* Article Contains Headings and Paragraph - It appears the "H1,H2, H3" and Paragraph widths are smaller than the designated 495px in the provided ref.  */
 article {
     background-color: #777;
     color: #EBEBEB;
     padding: 20px;
 }
-/* My Content Heading and Paragraph */
-.heading,
+
+/* My Content Heading and Paragraph  - I went with an h3 tag over h1 to achieve desired text sizing */
+h3,
 p {
     background-color: #EBEBEB;
     color: #777;
@@ -80,7 +85,8 @@ p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-/* Right Side Content - I used Height to lengthen rather than Content and Padding to achieve box size in order to keep text where it appears in the provided ref image */
+
+/* Right Side of Middle Box - Content - I used Height to lengthen rather than Content and Padding to achieve box size in order to keep text where it appears in the provided ref image */
 aside {
     float: right;
     width: 31%;
